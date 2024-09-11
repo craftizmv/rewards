@@ -1,0 +1,31 @@
+{
+  "serviceName": "reward_service",
+  "deliveryType": "http",
+  "context": {
+    "timeout": 20
+  },
+  "rabbitMq": {
+    "user": "guest",
+    "password": "guest",
+    "host": "localhost",
+    "port": 5672,
+    "exchangeName": "product",
+    "kind" : "topic"
+  },
+  "echo": {
+    "port": ":8080",
+    "development": true,
+    "timeout": 30,
+    "basePath": "/api/v1",
+    "host": "http://localhost",
+    "debugHeaders": true,
+    "httpClientDebug": true,
+    "debugErrorsResponse": true,
+    "ignoreLogUrls": [
+      "metrics"
+    ]
+  },
+  "logger": {
+    "level": "debug"
+  }
+}
