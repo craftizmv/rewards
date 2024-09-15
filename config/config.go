@@ -1,6 +1,8 @@
 package config
 
 import (
+	"github.com/craftizmv/rewards/internal/data/infrastructure/cache"
+	"github.com/craftizmv/rewards/internal/data/infrastructure/database"
 	"github.com/craftizmv/rewards/internal/data/infrastructure/queue"
 	"github.com/craftizmv/rewards/pkg/logger"
 	"github.com/craftizmv/rewards/server"
@@ -13,6 +15,8 @@ type Config struct {
 	Logger      *logger.LoggerConfig  `mapstructure:"logger"`
 	Rabbitmq    *queue.RabbitMQConfig `mapstructure:"rabbitmq"`
 	EchoCfg     *server.EchoConfig    `mapstructure:"echo"`
+	CacheCfg    *cache.Config         `mapstructure:"cache"`
+	DBCfg       *database.Config      `mapstructure:"db"`
 }
 
 var (

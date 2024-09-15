@@ -36,7 +36,6 @@ func NewRabbitMQConn(cfg *RabbitMQConfig, ctx context.Context) (*amqp.Connection
 	var err error
 
 	err = backoff.Retry(func() error {
-
 		conn, err = amqp.Dial(connAddr)
 		if err != nil {
 			log.Errorf("Failed to connect to RabbitMQ: %v. Connection information: %s", err, connAddr)

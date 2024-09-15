@@ -1,0 +1,67 @@
+According to GPT:
+ - below can be different conditions, we are going to choose some.
+
+When determining whether an order is eligible for reward allocation in a campaign system, you'll need to define clear criteria based on both business rules and technical constraints. These conditions can be driven by factors such as the type of campaign, order details, customer profile, and external factors like inventory or promotional limits. Below are common conditions you might consider:
+
+### 1. **Campaign Active Status**
+   - **Condition**: The campaign should be active at the time of order placement.
+   - **Example**: The current date and time should fall between the campaign’s start and end dates.
+
+### 2. **Order Value Threshold**
+   - **Condition**: The order value must meet or exceed a predefined minimum threshold to qualify for a reward.
+   - **Example**: An order must have a total value greater than or equal to $100 to qualify for a reward.
+
+### 3. **Item/Category Restrictions**
+   - **Condition**: Specific products or categories within the order might be required for reward eligibility.
+   - **Example**: The reward is only applicable if the order includes items from a specific category like "Electronics" or "Clothing."
+
+### 4. **Customer Segmentation**
+   - **Condition**: The reward may be limited to certain customer segments, such as loyalty program members, first-time buyers, or customers in specific regions.
+   - **Example**: Only customers who are part of the "Gold" loyalty tier or new customers are eligible for rewards.
+
+### 5. **Campaign-Specific Quantity Requirements**
+   - **Condition**: Some campaigns might require a minimum quantity of items to be purchased to be eligible.
+   - **Example**: The order must include at least 3 items to qualify for a reward.
+
+### 6. **Reward Usage Limits**
+   - **Condition**: The reward system may have a cap on the number of rewards allocated per user, order, or during the entire campaign duration.
+   - **Example**: A customer can only receive a maximum of 1 reward per order or a maximum of 5 rewards during the campaign period.
+
+### 7. **Reward Inventory Availability**
+   - **Condition**: The reward may be limited by available inventory, so orders can only be eligible if rewards are still available.
+   - **Example**: If the reward inventory is exhausted, new orders may not qualify for the reward.
+
+### 8. **Order Status**
+   - **Condition**: The order must be in a valid state (e.g., completed or shipped) for rewards to be allocated.
+   - **Example**: Rewards should only be allocated to orders that are not canceled, refunded, or in a pending state.
+
+### 9. **Previous Reward Eligibility**
+   - **Condition**: Some campaigns might restrict eligibility to customers who haven't previously claimed a reward or who haven’t placed an order within a certain timeframe.
+   - **Example**: A customer who has already received a reward in the current month might not be eligible for another reward.
+
+### 10. **Payment Method**
+   - **Condition**: Some campaigns may require specific payment methods (e.g., credit card, mobile payment) to qualify for rewards.
+   - **Example**: The reward is only applicable if the payment is made via a specific mobile wallet or credit card provider.
+
+### 11. **Geographical Restrictions**
+   - **Condition**: The reward campaign might only be valid in certain regions or countries.
+   - **Example**: Only orders shipped to the U.S. or Europe are eligible for the campaign rewards.
+
+### 12. **Fraud/Blacklisting Checks**
+   - **Condition**: Orders should pass fraud checks or blacklisted customers/orders should be excluded.
+   - **Example**: An order from a flagged account due to previous fraudulent activity should not be eligible for rewards.
+
+### 13. **Coupon/Discount Combinations**
+   - **Condition**: There may be rules around whether the reward can be combined with other discounts, coupons, or offers.
+   - **Example**: Orders using a specific promotional code might not be eligible for additional rewards.
+
+### 14. **Order Type or Channel**
+   - **Condition**: The order might need to come from a specific sales channel (e.g., online, mobile app) or be a specific type of order (e.g., recurring, one-time).
+   - **Example**: Only mobile app orders qualify for a particular reward allocation.
+
+### 15. **Time of Purchase**
+   - **Condition**: Rewards might only be available for orders placed within a certain time window.
+   - **Example**: The reward is only available for orders placed between 8 AM and 10 AM, or during weekends.
+
+### Summary:
+You should evaluate all these conditions and apply the ones relevant to your specific campaign. For complex campaigns, you can combine several of these conditions to ensure that rewards are allocated to the most relevant orders and customers. Would you like to design a specific eligibility evaluation function based on some of these criteria?

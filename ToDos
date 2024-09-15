@@ -2,3 +2,17 @@
    -  May be to test it out - add the binding.
 
 2.
+
+
+- Gift returns are not considered
+
+- Integrate jeager with otel.
+
+- Integrate uber Fx as a DI engine.
+
+Focus:
+Flows
+    1. Flow from order_service -> reward_service to give if the order is valid for any campaign and a reward.
+    2. order_allocation.
+    3. order_cancellation
+    4. order_reallocation.

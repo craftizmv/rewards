@@ -1,6 +1,5 @@
 {
   "serviceName": "reward_service",
-  "deliveryType": "http",
   "context": {
     "timeout": 20
   },
@@ -10,7 +9,7 @@
     "host": "localhost",
     "port": 5672,
     "exchangeName": "product",
-    "kind" : "topic"
+    "kind": "topic"
   },
   "echo": {
     "port": ":8080",
@@ -25,7 +24,22 @@
       "metrics"
     ]
   },
+  "cache": {
+    "addr": ":8080",
+    "password": "",
+    "db": 0,
+    "ttl": 518400
+  },
   "logger": {
     "level": "debug"
+  },
+  "db": {
+    "host": "localhost",
+    "port": 5432,
+    "user": "postgres",
+    "password": 123456,
+    "dbname": "rewards",
+    "sslmode": "disable",
+    "timezone": "Asia/Kolkata"
   }
 }
